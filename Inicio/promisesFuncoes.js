@@ -26,6 +26,7 @@ const promisses = [
 ]
 
 /*
+//Resolve todos e devolve os valores
 Promise.all(promisses)
 .then(valor => {
     console.log(valor)
@@ -35,6 +36,8 @@ Promise.all(promisses)
 })
 */
 
+/*
+//Devolve o primeiro que ficar pronto
 Promise.race(promisses)
 .then(valor => {
     console.log(valor)
@@ -42,3 +45,18 @@ Promise.race(promisses)
 .catch(erro =>{
     console.log(erro)
 })
+*/
+function baixaPagina(){
+    const emCache = true;
+    if(emCache){
+        return Promise.resolve('Página em cache')
+    } else {
+        return esperaAi("Baixei a página", 3000)
+    }
+}
+
+baixaPagina()
+.then(dados => {
+    console.log(dados)
+})
+.catch(e => console.log(e))
