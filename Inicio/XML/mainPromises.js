@@ -35,7 +35,7 @@ async function carregaPagina(el){
         const response = await requisicao(objetoConfig);
         carregaResultado(response)
     } catch(e) {
-        console.log(e)
+        console.log("Error ", e)
     }
 
 }
