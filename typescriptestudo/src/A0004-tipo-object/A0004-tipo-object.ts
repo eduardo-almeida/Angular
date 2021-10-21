@@ -11,7 +11,7 @@ const objetoA: {
 objetoA.chaveB = 'Outro valor';
 objetoA.chaveC = 'Novo valor';
 objetoA.chaveD = 'Nova chave';
-objetoA.chaveE = 'Nova chave';
+objetoA.chaveEl = 'Nova chave';
 
 console.log(objetoA);
 
