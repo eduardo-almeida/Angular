@@ -588,7 +588,6 @@ var exports = __webpack_exports__;
   \************************************************/
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-console.log('Ola');
 __webpack_require__(/*! ./form-control */ "./src/A0019-exercicio/form-control.ts");
 
 })();
