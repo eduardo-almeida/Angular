@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import {Student} from './students.model'
 
 @Component({
   selector: 'jad-student',
@@ -6,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
-  name: string = 'Luke'
-  isJedi: boolean = true
+  @Input() student: Student = {name : "", isJedi: true}
 
   constructor() { }
 

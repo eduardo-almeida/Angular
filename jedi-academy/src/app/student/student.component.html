@@ -1,6 +1,6 @@
 <div>
-  Student: {{name}}
-  <div [hidden] = "!isJedi">
-    Jedi temple: Coruscant
+  Student: {{student.name}}
+  <div *ngIf = "student.isJedi">
+    Jedi temple: {{student.temple}}
   </div>
 </div>
