@@ -370,5 +370,58 @@
       "restaurantId": "tasty-treats"
     }
   ],
+  "jogador": [
+    {
+      "Classe": "Guerreiro",
+      "arma": "espada",
+      "ca": 10,
+      "ataque": 5,
+      "danoMinimo": 4,
+      "danoMaximo": 9,
+      "pontosVida": 20
+    }
+  ],
+  "monstros": [
+    {
+      "raca": "Orc",
+      "arma": "espada",
+      "ca": 6,
+      "ataque": 3,
+      "danoMinimo": 2,
+      "danoMaximo": 7,
+      "pontosVida": 10,
+      "nivel": 2
+    },
+    {
+      "raca": "goblin",
+      "arma": "faca",
+      "ca": 8,
+      "ataque": 3,
+      "danoMinimo": 1,
+      "danoMaximo": 5,
+      "pontosVida": 5,
+      "nivel": 1
+    },
+    {
+      "raca": "Orc Chefe",
+      "arma": "espada +1",
+      "ca": 8,
+      "ataque": 4,
+      "danoMinimo": 3,
+      "danoMaximo": 8,
+      "pontosVida": 13,
+      "nivel": 3
+    },
+    {
+      "raca": "goblin chefe",
+      "arma": "faca +1",
+      "ca": 9,
+      "ataque": 4,
+      "danoMinimo": 2,
+      "danoMaximo": 6,
+      "pontosVida": 7,
+      "nivel": 2
+    }
+  ],
   "orders": []
 }
