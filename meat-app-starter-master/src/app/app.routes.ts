@@ -7,6 +7,8 @@ import { RestaurantDetailComponent } from "./restaurant-detail/restaurant-detail
 import { DetalheCombateComponent } from "./jogador/detalhe-combate/detalhe-combate.component";
 import { MenuComponent } from "./restaurant-detail/menu/menu.component";
 import { ReviewsComponent } from "./restaurant-detail/reviews/reviews.component";
+import { MochilaComponent } from "./jogador/detalhe-combate/mochila/mochila.component";
+import { ListaMonstroComponent } from "./jogador/detalhe-combate/lista-monstro/lista-monstro.component";
 
 
 export const ROUTES: Routes = [
@@ -21,5 +23,10 @@ export const ROUTES: Routes = [
     ]},
 
   {path: 'jogador', component: JogadorComponent},
-  {path: 'monstros/:id', component: DetalheCombateComponent}
+  {path: 'monstros/:id', component: DetalheCombateComponent,
+  children: [
+    {path: '', redirectTo: 'lista', pathMatch: 'full'},
+    {path: 'lista', component: ListaMonstroComponent},
+    {path: 'mochila', component: MochilaComponent},
+  ]},
 ]
