@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
@@ -24,6 +24,7 @@ import { CombateComponent } from './jogador/detalhe-combate/combate/combate.comp
 import { ListaMonstroComponent } from './jogador/detalhe-combate/lista-monstro/lista-monstro.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { MochilaComponent } from './jogador/detalhe-combate/mochila/mochila.component';
+import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service'
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { MochilaComponent } from './jogador/detalhe-combate/mochila/mochila.comp
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService, JogadorService],
+  providers: [RestaurantsService, JogadorService, ShoppingCartService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
