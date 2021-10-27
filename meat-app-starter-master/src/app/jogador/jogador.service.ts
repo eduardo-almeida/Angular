@@ -17,4 +17,10 @@ export class JogadorService {
       .map(Response => Response.json())
       .catch(ErrorHandler.handlerError)
   }
+
+  racaById(id:string): Observable<Monstro> {
+    return this.http.get(`${MEAT_API}/monstros/${id}`)
+      .map(response => response.json())
+      .catch(ErrorHandler.handlerError)
+  }
 }

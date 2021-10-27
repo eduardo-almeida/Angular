@@ -383,45 +383,36 @@
   ],
   "monstros": [
     {
-      "raca": "Orc",
-      "arma": "espada",
-      "ca": 6,
-      "ataque": 3,
-      "danoMinimo": 2,
-      "danoMaximo": 7,
-      "pontosVida": 10,
-      "nivel": 2
+      "id": "Orc",
+      "categoria": "Corpo a corpo",
+      "descricao": "Atacante burro, corre para o inimigo",
+      "tesouro": "Armaduras de couro gastas e uma espada enferrujada",
+      "tesouroMinimo": 2,
+      "tesouroMaximo": 7,
+      "nivel": 2,
+      "imagePath": "assets/img/restaurants/burgerhouse.png"
     },
     {
-      "raca": "goblin",
-      "arma": "faca",
-      "ca": 8,
-      "ataque": 3,
-      "danoMinimo": 1,
-      "danoMaximo": 5,
-      "pontosVida": 5,
-      "nivel": 1
+      "id": "Goblin",
+      "categoria": "A distância",
+      "descricao": "Flechas envenenadas",
+      "tesouro": "Armaduras de couro gastas e arco com galhos podres",
+      "tesouroMinimo": 2,
+      "tesouroMaximo": 7,
+      "nivel": 2,
+      "imagePath": "assets/img/restaurants/coffeecorner.png"
     },
     {
-      "raca": "Orc Chefe",
-      "arma": "espada +1",
-      "ca": 8,
-      "ataque": 4,
-      "danoMinimo": 3,
-      "danoMaximo": 8,
-      "pontosVida": 13,
-      "nivel": 3
-    },
-    {
-      "raca": "goblin chefe",
-      "arma": "faca +1",
-      "ca": 9,
-      "ataque": 4,
-      "danoMinimo": 2,
-      "danoMaximo": 6,
-      "pontosVida": 7,
-      "nivel": 2
+      "id": "Drow",
+      "categoria": "Corpo a corpo",
+      "descricao": "Elfos que utilizam magias da escuridão",
+      "tesouro": "Espada de mithrill",
+      "tesouroMinimo": 2,
+      "tesouroMaximo": 7,
+      "nivel": 2,
+      "imagePath": "assets/img/restaurants/breadbakery.png"
     }
+
   ],
   "orders": []
 }

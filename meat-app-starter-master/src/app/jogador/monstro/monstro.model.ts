@@ -1,10 +1,10 @@
 export interface Monstro {
-  raca: string
-  arma: string
-  ca: number
-  ataque: number
-  danoMinimo: number
-  danoMaximo: number
-  pontosVida: number
+  id: string
+  categoria: string
+  descricao: string
+  tesouro: string
+  tesouroMinimo: number
+  tesouroMaximo: number
   nivel: number
+  imagePath: string
 }

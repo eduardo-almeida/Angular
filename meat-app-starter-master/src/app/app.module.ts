@@ -15,6 +15,13 @@ import { RestaurantsService } from './restaurants/restaurants.service';
 import { JogadorComponent } from './jogador/jogador.component';
 import { MonstroComponent } from './jogador/monstro/monstro.component';
 import { JogadorService } from './jogador/jogador.service';
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
+import { MenuComponent } from './restaurant-detail/menu/menu.component';
+import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
+import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
+import { DetalheCombateComponent } from './jogador/detalhe-combate/detalhe-combate.component';
+import { CombateComponent } from './jogador/detalhe-combate/combate/combate.component';
+import { ListaMonstroComponent } from './jogador/detalhe-combate/lista-monstro/lista-monstro.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,14 @@ import { JogadorService } from './jogador/jogador.service';
     RestaurantsComponent,
     RestaurantComponent,
     JogadorComponent,
-    MonstroComponent
+    MonstroComponent,
+    RestaurantDetailComponent,
+    MenuComponent,
+    ShoppingCartComponent,
+    MenuItemComponent,
+    DetalheCombateComponent,
+    CombateComponent,
+    ListaMonstroComponent,
   ],
   imports: [
     BrowserModule,

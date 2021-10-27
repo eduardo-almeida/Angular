@@ -1,12 +1,11 @@
-<a href="#">
+<a [routerLink]="['/monstros', monstro.id]">
   <div class="place-info-box">
     <span class="place-info-box-icon"><img /></span>
 
     <div class="place-info-box-content">
-      <span class="place-info-box-text">{{monstro.raca}}</span>
+      <span class="place-info-box-text">{{monstro.id}}</span>
       <span class="place-info-box-star"><i class="fa fa-star"></i>{{monstro.nivel}}</span>
-      <span class="place-info-box-detail">{{monstro.arma}}</span>
-      <span class="place-info-box-detail">{{monstro.ca}}</span>
+      <span class="place-info-box-detail">{{monstro.categoria}}</span>
     </div>
     <a class="btn btn-primary btn-lg" [routerLink]="['/restaurants']">Ver Restaurantes</a>
   </div>
