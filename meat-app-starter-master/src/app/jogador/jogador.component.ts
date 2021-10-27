@@ -13,7 +13,8 @@ export class JogadorComponent implements OnInit {
   constructor(private jogadorService: JogadorService) { }
 
   ngOnInit() {
-    this.jogadorService.monstros().subscribe(monstros => this.monstros = monstros)
+    this.jogadorService.monstros()
+      .subscribe(monstros => this.monstros = monstros)
   }
 
 }
