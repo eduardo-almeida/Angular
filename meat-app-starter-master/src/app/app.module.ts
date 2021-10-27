@@ -22,6 +22,7 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { DetalheCombateComponent } from './jogador/detalhe-combate/detalhe-combate.component';
 import { CombateComponent } from './jogador/detalhe-combate/combate/combate.component';
 import { ListaMonstroComponent } from './jogador/detalhe-combate/lista-monstro/lista-monstro.component';
+import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ListaMonstroComponent } from './jogador/detalhe-combate/lista-monstro/l
     DetalheCombateComponent,
     CombateComponent,
     ListaMonstroComponent,
+    ReviewsComponent,
   ],
   imports: [
     BrowserModule,
