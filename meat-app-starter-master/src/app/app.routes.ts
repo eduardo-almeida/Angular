@@ -9,6 +9,7 @@ import { MenuComponent } from "./restaurant-detail/menu/menu.component";
 import { ReviewsComponent } from "./restaurant-detail/reviews/reviews.component";
 import { MochilaComponent } from "./jogador/detalhe-combate/mochila/mochila.component";
 import { ListaMonstroComponent } from "./jogador/detalhe-combate/lista-monstro/lista-monstro.component";
+import { OrderComponent } from "./order/order.component";
 
 
 export const ROUTES: Routes = [
@@ -21,6 +22,7 @@ export const ROUTES: Routes = [
       {path: 'menu', component: MenuComponent},
       {path: 'reviews', component: ReviewsComponent},
     ]},
+  {path: 'order', component: OrderComponent},
 
   {path: 'jogador', component: JogadorComponent},
   {path: 'monstros/:id', component: DetalheCombateComponent,
