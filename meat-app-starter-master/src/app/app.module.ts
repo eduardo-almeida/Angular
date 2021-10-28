@@ -24,7 +24,9 @@ import { CombateComponent } from './jogador/detalhe-combate/combate/combate.comp
 import { ListaMonstroComponent } from './jogador/detalhe-combate/lista-monstro/lista-monstro.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { MochilaComponent } from './jogador/detalhe-combate/mochila/mochila.component';
-import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service'
+import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
+import { MonstroItemComponent } from './jogador/detalhe-combate/monstro-item/monstro-item.component'
+import { CombateService} from './jogador/detalhe-combate/combate/combate.service'
 
 @NgModule({
   declarations: [
@@ -45,13 +47,15 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
     ListaMonstroComponent,
     ReviewsComponent,
     MochilaComponent,
+    MonstroItemComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService, JogadorService, ShoppingCartService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
+  providers: [RestaurantsService, JogadorService, ShoppingCartService, CombateService,
+              {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

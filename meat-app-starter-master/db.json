@@ -414,5 +414,73 @@
     }
 
   ],
+  "monstroIndividual": [
+    {
+      "id": "orc comum",
+      "name": "Orc Comum",
+      "descricao": "Orc com uma espada velha e armadura de couro de animal",
+      "ca": 8,
+      "ataque": 4,
+      "danoMin":2 ,
+      "danoMax": 6,
+      "pontoVida": 6,
+      "nivel": 2,
+      "monstroId": "Orc"
+    },
+    {
+      "id": "orc robusto",
+      "name": "Orc Forte",
+      "descricao": "Orc com uma espada e armadura de couro batido",
+      "ca": 8,
+      "ataque": 4,
+      "danoMin":2 ,
+      "danoMax": 6,
+      "pontoVida": 6,
+      "nivel": 2,
+      "monstroId": "Orc"
+    },
+    {
+      "id": "Drow comum",
+      "name": "Drow Escravo",
+      "descricao": "Espada afiada",
+      "ca": 8,
+      "ataque": 4,
+      "danoMin":2 ,
+      "danoMax": 6,
+      "pontoVida": 6,
+      "nivel": 2,
+      "monstroId": "Drow"
+    }
+  ],
+  "equipamentos": [
+    {
+      "name": "Armadura reforçada",
+      "date": "2017-01-23T18:25:43",
+      "rating": 3.2,
+      "comments": "Consegui com um orc manco",
+      "monstroId": "Orc"
+    },
+    {
+      "name": "Espada envenenda",
+      "date": "2016-12-12T18:25:43",
+      "rating": 4.3,
+      "comments": "Causa mais dano nos inimigos",
+      "monstroId": "Orc"
+    },
+    {
+      "name": "Mochila Furada",
+      "date": "2017-01-23T18:25:43",
+      "rating": 1.5,
+      "comments": "Itens tem 45% de chance de cair",
+      "monstroId": "Orc"
+    },
+    {
+      "name": "Arco quebrado",
+      "date": "2016-12-12T18:25:43",
+      "rating": 3,
+      "comments": "Não atira, mas serve de tacape",
+      "monstroId": "Goblin"
+    }
+  ],
   "orders": []
 }

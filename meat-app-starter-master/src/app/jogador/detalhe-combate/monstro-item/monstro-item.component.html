@@ -1,0 +1,11 @@
+<div class="menu-item-info-box">
+  <span class="menu-item-info-box-icon"><img [src]=""></span>
+
+  <div class="menu-item-info-box-content">
+    <span class="menu-item-info-box-text">{{monstroItem.name}}</span>
+    <span class="menu-item-info-box-detail">{{monstroItem.descricao}}</span>
+    <span class="menu-item-info-box-price">{{monstroItem.nivel}}</span>
+    <a (click)="emitAddEvent()" class=""><i class="fa fa-plus-circle"></i>{{monstroItem.name}}</a>
+  </div>
+  <!-- /.info-box-content -->
+</div>
