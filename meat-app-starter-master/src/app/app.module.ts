@@ -28,7 +28,8 @@ import { MochilaComponent } from './jogador/detalhe-combate/mochila/mochila.comp
 import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
 import { MonstroItemComponent } from './jogador/detalhe-combate/monstro-item/monstro-item.component'
 import { CombateService} from './jogador/detalhe-combate/combate/combate.service';
-import { OrderComponent } from './order/order.component'
+import { OrderComponent } from './order/order.component';
+import { InputComponent } from './shared/input/input.component'
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { OrderComponent } from './order/order.component'
     MochilaComponent,
     MonstroItemComponent,
     OrderComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
