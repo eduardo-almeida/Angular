@@ -10,6 +10,7 @@ import { ReviewsComponent } from "./restaurant-detail/reviews/reviews.component"
 import { MochilaComponent } from "./jogador/detalhe-combate/mochila/mochila.component";
 import { ListaMonstroComponent } from "./jogador/detalhe-combate/lista-monstro/lista-monstro.component";
 import { OrderComponent } from "./order/order.component";
+import { OrderSumaryComponent } from "./order-sumary/order-sumary.component";
 
 
 export const ROUTES: Routes = [
@@ -23,6 +24,7 @@ export const ROUTES: Routes = [
       {path: 'reviews', component: ReviewsComponent},
     ]},
   {path: 'order', component: OrderComponent},
+  {path: 'order-sumary', component: OrderSumaryComponent},
 
   {path: 'jogador', component: JogadorComponent},
   {path: 'monstros/:id', component: DetalheCombateComponent,
