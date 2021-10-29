@@ -29,7 +29,8 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
 import { MonstroItemComponent } from './jogador/detalhe-combate/monstro-item/monstro-item.component'
 import { CombateService} from './jogador/detalhe-combate/combate/combate.service';
 import { OrderComponent } from './order/order.component';
-import { InputComponent } from './shared/input/input.component'
+import { InputComponent } from './shared/input/input.component';
+import { RadioComponent } from './shared/radio/radio.component'
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { InputComponent } from './shared/input/input.component'
     MonstroItemComponent,
     OrderComponent,
     InputComponent,
+    RadioComponent,
   ],
   imports: [
     BrowserModule,
