@@ -30,7 +30,9 @@ import { MonstroItemComponent } from './jogador/detalhe-combate/monstro-item/mon
 import { CombateService} from './jogador/detalhe-combate/combate/combate.service';
 import { OrderComponent } from './order/order.component';
 import { InputComponent } from './shared/input/input.component';
-import { RadioComponent } from './shared/radio/radio.component'
+import { RadioComponent } from './shared/radio/radio.component';
+import { OrderItemsComponent } from './order/order-items/order-items.component'
+import { OrderService } from './order/order.service';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,7 @@ import { RadioComponent } from './shared/radio/radio.component'
     OrderComponent,
     InputComponent,
     RadioComponent,
+    OrderItemsComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,7 @@ import { RadioComponent } from './shared/radio/radio.component'
     FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService, JogadorService, ShoppingCartService, CombateService,
+  providers: [RestaurantsService, JogadorService, ShoppingCartService, CombateService, OrderService,
               {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
