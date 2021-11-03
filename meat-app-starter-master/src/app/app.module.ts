@@ -28,13 +28,11 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
 import { MonstroItemComponent } from './jogador/detalhe-combate/monstro-item/monstro-item.component'
 import { CombateService} from './jogador/detalhe-combate/combate/combate.service';
 import { OrderComponent } from './order/order.component';
-import { InputComponent } from './shared/input/input.component';
-import { RadioComponent } from './shared/radio/radio.component';
 import { OrderItemsComponent } from './order/order-items/order-items.component'
 import { OrderService } from './order/order.service';
 import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
-import { RatingComponent } from './shared/rating/rating.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -56,18 +54,14 @@ import { RatingComponent } from './shared/rating/rating.component';
     MochilaComponent,
     MonstroItemComponent,
     OrderComponent,
-    InputComponent,
-    RadioComponent,
     OrderItemsComponent,
     DeliveryCostsComponent,
     OrderSumaryComponent,
-    RatingComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule,
-    ReactiveFormsModule,
+    SharedModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [RestaurantsService, JogadorService, ShoppingCartService, CombateService, OrderService,
