@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { RouterModule, PreloadAllModules } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ROUTES } from './app.routes';
@@ -11,7 +11,6 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { RestaurantComponent } from './restaurants/restaurant/restaurant.component';
-import { RestaurantsService } from './restaurants/restaurants.service';
 import { JogadorComponent } from './jogador/jogador.component';
 import { MonstroComponent } from './jogador/monstro/monstro.component';
 import { JogadorService } from './jogador/jogador.service';
@@ -24,12 +23,11 @@ import { CombateComponent } from './jogador/detalhe-combate/combate/combate.comp
 import { ListaMonstroComponent } from './jogador/detalhe-combate/lista-monstro/lista-monstro.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { MochilaComponent } from './jogador/detalhe-combate/mochila/mochila.component';
-import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
 import { MonstroItemComponent } from './jogador/detalhe-combate/monstro-item/monstro-item.component'
 import { CombateService} from './jogador/detalhe-combate/combate/combate.service';
-import { OrderService } from './order/order.service';
 import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
@@ -55,11 +53,10 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     HttpModule,
-    SharedModule,
-    RouterModule.forRoot(ROUTES)
+    SharedModule.forRoot(),
+    RouterModule.forRoot(ROUTES, {preloadingStrategy:PreloadAllModules})
   ],
-  providers: [RestaurantsService, JogadorService, ShoppingCartService, CombateService, OrderService,
-              {provide: LOCALE_ID, useValue: 'pt-BR'}],
+  providers: [ JogadorService, CombateService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
