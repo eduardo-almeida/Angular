@@ -614,6 +614,22 @@
         }
       ],
       "id": 8
+    },
+    {
+      "name": "Local",
+      "email": "eduardoeandroid@gmail.com",
+      "emailConfirmation": "eduardoeandroid@gmail.com",
+      "address": "aaa",
+      "number": "1",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 9
     }
   ]
 }
