@@ -33,12 +33,6 @@ export class SnackbarComponent implements OnInit {
 
   constructor(private notificationService: NotificationService) { }
 
-  notifier = new EventEmitter<any>();
-
-    notify(message: string){
-       this.notifier.emit(message);
-    }
-
   ngOnInit() {
     this.notificationService.notifier
     .do(message => {
