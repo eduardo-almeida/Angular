@@ -28,6 +28,7 @@ import { MonstroItemComponent } from './jogador/detalhe-combate/monstro-item/mon
 import { CombateService} from './jogador/detalhe-combate/combate/combate.service';
 import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 import { SharedModule } from './shared/shared.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { SharedModule } from './shared/shared.module';
     MochilaComponent,
     MonstroItemComponent,
     OrderSumaryComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

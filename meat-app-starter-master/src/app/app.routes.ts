@@ -9,7 +9,7 @@ import { ReviewsComponent } from "./restaurant-detail/reviews/reviews.component"
 import { MochilaComponent } from "./jogador/detalhe-combate/mochila/mochila.component";
 import { ListaMonstroComponent } from "./jogador/detalhe-combate/lista-monstro/lista-monstro.component";
 import { OrderSumaryComponent } from "./order-sumary/order-sumary.component";
-
+import { NotFoundComponent } from "./not-found/not-found.component";
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
@@ -23,6 +23,7 @@ export const ROUTES: Routes = [
     ]},
   {path: 'order', loadChildren: './order/order.module#OrderModule'},
   {path: 'order-sumary', component: OrderSumaryComponent},
+  {path: '**', component: NotFoundComponent},
 
   {path: 'jogador', component: JogadorComponent},
   {path: 'monstros/:id', component: DetalheCombateComponent,
