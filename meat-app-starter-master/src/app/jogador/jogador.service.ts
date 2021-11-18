@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Http } from "@angular/http";
+import { HttpClient, HttpParams } from "@angular/common/http";
 
 import { Monstro } from "./monstro/monstro.model";
 import { MEAT_API } from "app/app.api";
@@ -12,29 +12,26 @@ import { MonstroItem } from "./detalhe-combate/monstro-item/monstro-item.model";
 @Injectable()
 export class JogadorService {
 
-  constructor(private http: Http){}
+  constructor(private http: HttpClient){}
 
   monstros(): Observable<Monstro[]> {
-    return this.http.get(`${MEAT_API}/monstros`)
-      .map(Response => Response.json())
-      .catch(ErrorHandler.handlerError)
+//     let params: HttpParams =  undefined
+//     if(search){
+//       params = new HttpParams().set('q', search)
+//     }
+
+    return this.http.get<Monstro[]>(`${MEAT_API}/monstros`)
   }
 
   racaById(id:string): Observable<Monstro> {
-    return this.http.get(`${MEAT_API}/monstros/${id}`)
-      .map(response => response.json())
-      .catch(ErrorHandler.handlerError)
+    return this.http.get<Monstro>(`${MEAT_API}/monstros/${id}`)
   }
 
   equipamentoOfMonstro(id: string): Observable<any>{
     return this.http.get(`${MEAT_API}/monstros/${id}/equipamentos`)
-    .map(response => response.json())
-    .catch(ErrorHandler.handlerError)
   }
 
   listaOfMonstro(id: string): Observable<MonstroItem[]>{
-    return this.http.get(`${MEAT_API}/monstros/${id}/monstroIndividual`)
-    .map(response => response.json())
-    .catch(ErrorHandler.handlerError)
+    return this.http.get<MonstroItem[]>(`${MEAT_API}/monstros/${id}/monstroIndividual`)
   }
 }
