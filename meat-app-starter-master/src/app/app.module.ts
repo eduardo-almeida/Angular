@@ -3,7 +3,8 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { ROUTES } from './app.routes';
 
@@ -60,7 +61,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES, {preloadingStrategy:PreloadAllModules})
   ],
-  providers: [ JogadorService, CombateService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
+  providers: [ JogadorService, CombateService, //{provide: LocationStrategy, useValue: HashLocationStrategy},
+              {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
